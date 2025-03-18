@@ -1,4 +1,4 @@
-#Reverse digits of a number
+# Reverse digits of a number
 n = int(input("Enter the number: "))
 while n>0:
     r=n%10
