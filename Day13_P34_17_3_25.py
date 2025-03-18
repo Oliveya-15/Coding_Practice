@@ -1,4 +1,4 @@
-#Program to find Sum of GP Series
+# Program to find Sum of GP Series
 n = int(input("Enter the value of n: "))
 a = int(input("Enter the value of a: "))
 r = float(input("Enter the value of r: "))
