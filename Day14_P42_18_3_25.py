@@ -1,4 +1,4 @@
-# Calculate the Power of a Number : Binary Exponentiation
+#Calculate the Power of a Number : Binary Exponentiation
 value = int(input("Enter the number: "))
 power = int(input("Enter the Power value: "))
 r = pow(value,power)
