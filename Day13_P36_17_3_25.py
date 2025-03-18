@@ -1,4 +1,4 @@
-#Greatest of three numbers
+# Greatest of three numbers
 a=int(input("Enter the value of a: "))
 b=int(input("Enter the value of a: "))
 c=int(input("Enter the value of c: "))
