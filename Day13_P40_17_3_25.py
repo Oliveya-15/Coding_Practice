@@ -1,4 +1,4 @@
-#Print Fibonacci Series up to Nth term
+# Print Fibonacci Series up to Nth term
 n = int(input("Enter the range: "))
 
 # First two terms
