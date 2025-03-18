@@ -1,4 +1,4 @@
-#Find all Palindrome Numbers in given range
+# Find all Palindrome Numbers in given range
 n=int(input("Enter the range: "))
 a=list(map(int,input("Enter the numbers: ").split()))
 f=[]
