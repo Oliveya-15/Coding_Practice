@@ -1,4 +1,4 @@
-#Maximum and Minimum Digit in a Number
+# Maximum and Minimum Digit in a Number
 n = int(input("Enter the Number: "))
 l = 0  # Set to 0 to track the largest digit correctly
 s = 9  # Set to 9 to track the smallest digit correctly
