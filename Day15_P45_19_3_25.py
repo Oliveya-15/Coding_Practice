@@ -12,7 +12,7 @@ while n>0:
 if s==m:
     print("Strong")
 else:
-    print("Still Strong")
+    print("Try you will be Strong")
 
 
 # Input: N = 145
