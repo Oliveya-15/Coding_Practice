@@ -16,6 +16,29 @@ for i, val in enumerate(l):
             s.append(val)
 print(max(s))
 
+"""
+GCD formula :- GCD(a,b)=GCD(b,amodb)
+
+while n2:
+    n1,n2 = n2, n1%n2
+print(n1)
+
+
+
+n1 = 9, n2 = 12
+Step 1:
+Compute n1 % n2 → 9 % 12 = 9
+Swap: n1 = 12, n2 = 9
+Step 2:
+Compute n1 % n2 → 12 % 9 = 3
+Swap: n1 = 9, n2 = 3
+Step 3:
+Compute n1 % n2 → 9 % 3 = 0
+Swap: n1 = 3, n2 = 0
+End Condition:
+Since n2 = 0, the GCD is 3.
+"""
+
 
 # Input:N1 = 9, N2 = 12
                 
