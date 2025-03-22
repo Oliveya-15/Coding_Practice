@@ -9,6 +9,18 @@ while n>0:
 print(d)
 
 """
+by-default python function used to conert bin-dec :-
+n=input("Enter n: ")
+d=int(n,2)
+print(d)
+
+syntax:- int(string, base)
+base 2 = for binary, 8 for octal, 10 for decimal, 16 for hexadecimal.
+means whatever we are mentioning as base that will be consider and each will convert to decimal
+d=int(n,2) means, 2 tells Python that the input string is in binary (base 2), and Python should convert it to decimal (base 10).
+d=int(n,8) means, 8 tells Python that the input string is in octal (base 8), and Python should convert it to decimal (base 10).
+
+Dry Run :- 
 Initial values:
 n = 100, d = 0, b = 1
 
