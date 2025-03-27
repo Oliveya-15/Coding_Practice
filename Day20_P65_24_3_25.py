@@ -18,11 +18,16 @@ n = 5
 
 Outer Loop Starts (for i in range(n-1))
 The outer loop runs n-1 = 4 times (from i = 0 to i = 3).
+it continue n-1 times means for 5 value it execute 4 time because, in 4 time only the sorting become done there is no need to perform the loop for 5 times because, in each step number get sorted correctly in 4 time iteration
 
 First Outer Loop Iteration (i = 0)
 Initial list before this iteration: [8, 4, 3, 7, 2]
 
 Inner Loop (while ptr < n-1)
+ptr will run in each i'th position value                                             i=0  value = 8
+ptr is a variable that starts at 0.                                                  ptr=i[0] = 8
+n-1 means that ptr will loop until it reaches the second last index of the list.
+ptr increases in every iteration (ptr += 1).
 ptr starts at 0 and moves through the list comparing adjacent elements.
 
 ptr = 0: Compare a[0] = 8 and a[1] = 4
@@ -69,3 +74,12 @@ After the fourth iteration, the smallest element 2 is also in its correct positi
 # Input: N = 5, array[] = {5,4,3,2,1}
 # Output: 1,2,3,4,5
 # Explanation: After sorting we get 1,2,3,4,5
+
+
+"""n=int(input("Enter the range: "))
+a=list(map(int,input("Enter the numbers:).split()))
+for i in range(n-1):
+    ptr=0
+    while(ptr<n-1):
+
+"""
