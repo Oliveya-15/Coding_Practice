@@ -24,8 +24,8 @@ First Outer Loop Iteration (i = 0)
 Initial list before this iteration: [8, 4, 3, 7, 2]
 
 Inner Loop (while ptr < n-1)
-ptr will run in each i'th position value                                             i=0  value = 8
-ptr is a variable that starts at 0.                                                  ptr=i[0] = 8
+ptr will run in each i'th position value            ptr=a[0] = 8, a[ptr+1 = 0+1 = 1] = 4                               
+ptr is a variable that starts at 0.                                                 
 n-1 means that ptr will loop until it reaches the second last index of the list.
 ptr increases in every iteration (ptr += 1).
 ptr starts at 0 and moves through the list comparing adjacent elements.
@@ -76,10 +76,3 @@ After the fourth iteration, the smallest element 2 is also in its correct positi
 # Explanation: After sorting we get 1,2,3,4,5
 
 
-"""n=int(input("Enter the range: "))
-a=list(map(int,input("Enter the numbers:).split()))
-for i in range(n-1):
-    ptr=0
-    while(ptr<n-1):
-
-"""
