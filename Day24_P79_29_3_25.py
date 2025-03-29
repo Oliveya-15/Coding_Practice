@@ -1,6 +1,16 @@
 # Capitalize first and last character of each word of a string
 a=input("enter the String: ")
-print(a.title())
+r=[]
+b=a.split()
+for i in b:
+    f=i[0].upper()
+    m=i[1:-1]
+    l=i[-1].upper()
+    r.append(f+m+l)
+print(" ".join(r))
+
+
+        
 
 
 # Example 1:
