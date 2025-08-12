@@ -1,4 +1,4 @@
-#Day3 P8
+#Day4 P10
 #Remove Duplicates in-place from Sorted Array
 a=list(map(int,input("Enter the values: ").split()))
 l=[]
