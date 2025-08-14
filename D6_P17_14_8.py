@@ -1,4 +1,4 @@
-#Day5 P16
+#Day6 P17
 #Sort Elements of an Array by Frequency
 a=list(map(int,input("Enter the values: ").split()))
 l1=[]
