@@ -8,9 +8,9 @@ for i in range(n-1):
         if (min>a[j]):
             min=a[j]
             loc=j
-        t=a[i]
-        a[i]=a[loc]
-        a[loc]=t
+    t=a[i]
+    a[i]=a[loc]
+    a[loc]=t
 print(a)
 
 # Example 1:

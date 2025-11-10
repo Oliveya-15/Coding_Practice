@@ -20,7 +20,7 @@ if r in a:
   2,1 exist in a = true, now check
 if r!=a
   2,1 and 1,2 should be different then only it consider as symmetric = true, now check
-if r not in a:
+if r not in s:
     2,1 should not be already exist in s[] otherwise s will get duplicate value = true
 now add a[i] means [1,2] into s[]
 

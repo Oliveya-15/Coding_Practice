@@ -8,4 +8,3 @@ for i in a:
     else:
         f[i]=1
 print(f)
-

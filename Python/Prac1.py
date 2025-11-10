@@ -20,8 +20,8 @@ print("Hello\nWorld")
 #Printing a word for multiple time in a single line
 """
 range(stop)    |      range(start,stop)     |      range(start,stop,step)
-for i in n:   use for 'iterable'.  use for list,tuple,dict,set.  Iterate n number of element
-for i in range(n):   use for 'evaluation',   n must be an integer.   For looping a particular element n no. of times.
+for i in n:   n should be any list,set,tuple etc.   use for 'iterable'.  use for list,tuple,dict,set.  Iterate n number of element
+for i in range(n):   n must be an integer.   use for 'evaluation',   For looping a particular element n no. of times.
 """
 x="Oliveya"
 num=5
@@ -59,9 +59,9 @@ p = x+y
 q = x-y
 # Perform multiplication x*y below
 r = x*y
-# Perform integer divison x//y below
-s = x//y
-# Perform modulo operation x%y below
+# Perform integer divison x//y below             l,k=18,6
+s = x//y                                         print(l/k)   =>  3.0
+# Perform modulo operation x%y below             print(l//k)  =>  3
 t = x%y
 print(p, q, r, s, t)
 
@@ -140,7 +140,7 @@ print(ans)
 
 Input: a = 2, n = 10
 Output: 1024
-Explanation: an = a * rn-1 = 2 * 210-1 = 1024
+Explanation: an = a * r(n-1) = 2 * 210-1 = 1024
 
 """
 
