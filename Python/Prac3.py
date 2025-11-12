@@ -8,7 +8,7 @@ Output : None
 As we did not call the hello() function, that's why the instruction of printing 'Hello' will not execute.
 """
 
-# Function Call (Along with function declaration)
+# Function Call (function call Along with function declaration)
 def greet():
     print("Hello! Welcome to Python")
 greet()
@@ -17,7 +17,7 @@ Output : Hello! Welcome to Python
 As we call the greet() function(line no. 14), the function greet() will print - Hello! Welcome to Python
 """
 
-#Function with return type
+#Function with return type (Function with only return type)
 def add(a, b):
     r = a + b   #OR,    return a + b
     return r           
@@ -32,7 +32,7 @@ r have the value 5 (it can't be usble as function is not called andf used anywhe
 For return: Console output is :- None (unless the returned value is printed by the caller)
 """
 
-# calling the function and storing the result
+# calling the function and storing the result (Function with printing value)
 def sum(n,m):              #OR,     def sum(n,m):    
     res=n+m                #             res = a + b 
     print(res)             #             print(res)
@@ -54,9 +54,5 @@ Output : 1
 By return : output will be 1
 By print : output will be 1, None. 
 """
-
-
-
-
 
 
