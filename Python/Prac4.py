@@ -168,6 +168,84 @@ Back to loop(2) after loop(1) returned → print(2, end=" ") → outputs 2.
 Back to loop(3) after loop(2) returned → print(3, end=" ") → outputs 3.
 """
 
+# Fibonacci series up to Nth term (Applicable with highest Numbers as well)
+n1 = int(input("Enter the range: "))
+def fibo(n):
+    m=1000000007
+    if n==0:
+        return [0]
+    elif n==1:
+        return [0,1]
+    f=[0,1]
+    for i in range(2,n+1):
+        num=(f[-1]+ f[-2])%m
+        f.append(num)
+    return f
+r=fibo(n1)
+print(r)
+
+"""
+🧾 Problem says:
+We are given n, and we must return all Fibonacci numbers from 0th term to nth term.
+We also must return numbers modulo 10⁹ + 7 (means we take the remainder after dividing by 1,000,000,007 — this just prevents very large numbers).
+Input:
+n = 5
+Output:
+0 1 1 2 3 5
+
+🪄 Let’s Dry Run (Example: n = 5)
+Input: n = 5
+MOD = 10**9 + 7 → 1000000007
+
+if n == 0:
+            return [0]
+        elif n == 1:
+            return [0, 1]
+n is not 0 or 1, so we skip this part :
+
+Start list
+f = [0, 1]
+So currently, we have first two terms. f = [0, 1]
+
+Start loop
+We will run loop from i = 2 to i = 5.
+
+💡 Why we use MOD = 10**9 + 7 in coding problems?
+Because Fibonacci numbers (and many other series) grow very large very quickly.
+Example: for f(100) the result will be : 354224848179261915075
+* IT CAN OVERFLOW OR SLOW DOWN CALCULATION *
+
+MOD = 10**9 + 7  (which is 1,000,000,007)
+“If any number(which user will input) becomes bigger than 1,000,000,007, cut it down to its remainder after dividing by 1,000,000,007.”
+Suppose user input n=100 so output will be 354224848179261915075. this output is soo large so it will cut down 354224848179261915075 % 1000000007 = 8745084. 
+The result will get is : 8745084
+
+🌀 Iteration 1 : (i = 2)
+👉 Last two numbers: f[-1] = 1, f[-2] = 0
+👉Add :num = (1 + 0) % MOD = 1
+👉 Add to list: f = [0, 1, 1]
+
+🌀 Iteration 2 : (i = 3)
+👉 Last two numbers: f[-1] = 1, f[-2] = 1
+👉 Add: num = (1 + 1) % MOD = 2
+👉 Add to list: f = [0, 1, 1, 2]
+
+🌀 Iteration 3 : (i = 4)
+👉 Last two: f[-1] = 2, f[-2] = 1
+👉 Add: num = (2 + 1) % MOD = 3
+👉 Add to list: f = [0, 1, 1, 2, 3]
+
+🌀 Iteration 4 (i = 5)
+👉 Last two: f[-1] = 3, f[-2] = 2
+👉 Add: num = (3 + 2) % MOD = 5
+👉 Add to list: f = [0, 1, 1, 2, 3, 5]
+
+✅ Step 5: Return answer
+At the end, we have:   f = [0, 1, 1, 2, 3, 5]
+
+"""
+
+
 
 
 
