@@ -262,6 +262,22 @@ Explanation: The reverse of 2 is 2, and 22 = 4.
 Input: n = 10
 Output: 10
 Explanation: The reverse of 10 is 1 (leading zero is discarded), and 10 raised to the power 1 is 10.
+
+DRY RUN :-
+r = r * 10 + a % 10
+m=a (suppose a=2 then m also store 2),  r=0(initially)  : r becomes the reverse (suppose n=123 r=321)  
+a % 10	: Extracts the last digit of a
+r * 10	: Shifts current reversed number one digit left (makes space)
+r * 10 + (a % 10) : Appends the extracted digit to the reversed number
+
+a > 0 → enter loop
+a % 10 = 2                   a % 10 = 0
+r = 0*10 + 2 = 2             r = 0*10 + 0 = 0
+a = 2//10 = 0                a = 10//10 = 1 
+print (2(m)**2(r) = 4)       print (10(m)**0(r) = 10)
+
+How 2 %10 = 2 ? 
+=> small number % large number = small number
 """
 
 
