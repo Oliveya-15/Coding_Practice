@@ -185,6 +185,8 @@ r=fibo(n1)
 print(r)
 
 """
+Input : 5
+Output : 0 1 1 2 3 5
 🧾 Problem says:
 We are given n, and we must return all Fibonacci numbers from 0th term to nth term.
 We also must return numbers modulo 10⁹ + 7 (means we take the remainder after dividing by 1,000,000,007 — this just prevents very large numbers).
@@ -243,6 +245,23 @@ The result will get is : 8745084
 ✅ Step 5: Return answer
 At the end, we have:   f = [0, 1, 1, 2, 3, 5]
 
+"""
+
+# Power Of Numbers
+a = int(input("Enter the number: "))
+r,m=0,a
+while a>0:
+    r=r*10 + a%10
+    a=a//10
+print(m**r)   # OR,   pow(m,r)
+
+"""
+Input: n = 2
+Output: 4
+Explanation: The reverse of 2 is 2, and 22 = 4.
+Input: n = 10
+Output: 10
+Explanation: The reverse of 10 is 1 (leading zero is discarded), and 10 raised to the power 1 is 10.
 """
 
 
