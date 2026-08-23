@@ -11,3 +11,27 @@ c = np.random.randint(1, 21, (3, 3))
 print(c)
 print(b)
 print(a)
+
+
+
+# Shape, size and datatype of each matrix
+
+print(a.shape)
+print(a.size)
+print(a.dtype)
+
+print(b.shape)
+print(b.size)
+print(b.dtype)
+
+print(c.shape)
+print(c.size)
+print(c.dtype)
+
+
+# Transpose of random matrix
+print(c.T)
+
+
+# Sum of all elements in random matrix
+print(c.sum())
